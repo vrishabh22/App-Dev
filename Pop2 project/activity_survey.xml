@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.admin.classmanager.Survey">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Ques:"
+        android:id="@+id/Ques"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="66dp" />
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="YES"
+        android:id="@+id/Yes"
+        android:layout_below="@+id/Ques"
+        android:layout_toLeftOf="@+id/Ques"
+        android:layout_toStartOf="@+id/Ques"
+        android:layout_marginTop="81dp" />
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NO"
+        android:id="@+id/No"
+        android:layout_alignTop="@+id/Yes"
+        android:layout_toRightOf="@+id/Ques"
+        android:layout_toEndOf="@+id/Ques" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit Response"
+        android:id="@+id/Submit"
+        android:layout_marginTop="62dp"
+        android:layout_below="@+id/Yes"
+        android:layout_centerHorizontal="true"
+        android:onClick="vote" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="00"
+        android:id="@+id/yesDisp"
+        android:layout_centerVertical="true"
+        android:layout_alignRight="@+id/Yes"
+        android:layout_alignEnd="@+id/Yes" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="00"
+        android:id="@+id/noDIsp"
+        android:layout_centerVertical="true"
+        android:layout_alignRight="@+id/No"
+        android:layout_alignEnd="@+id/No" />
+</RelativeLayout>

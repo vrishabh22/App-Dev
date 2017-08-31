@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.admin.classmanager.CourseInfo"
+    android:background="#f45555">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Computer Comm. and Networking"
+        android:id="@+id/ccn"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:fontFamily="cursive"
+        android:onClick="ccn"
+        android:textSize="30dp"
+        android:textAlignment="center" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Obj Oriented Analysis and Design"
+        android:id="@+id/ooad"
+        android:layout_marginTop="40dp"
+        android:fontFamily="cursive"
+        android:onClick="ooad"
+        android:textSize="30dp"
+        android:layout_below="@+id/ccn"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:textAlignment="center" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_marginTop="40dp"
+        android:text="Paradigms of Programming"
+        android:id="@+id/pop2"
+        android:fontFamily="cursive"
+        android:onClick="pop2"
+        android:textSize="30dp"
+        android:layout_below="@+id/ooad"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Operating Systems"
+        android:id="@+id/os"
+        android:fontFamily="cursive"
+        android:onClick="os"
+        android:layout_marginTop="40dp"
+        android:textSize="30dp"
+        android:layout_below="@+id/pop2"
+        android:layout_alignRight="@+id/cg"
+        android:layout_alignEnd="@+id/cg" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Design and Analysis of Algorithm"
+        android:id="@+id/daa"
+        android:layout_below="@+id/os"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:fontFamily="cursive"
+        android:onClick="daa"
+        android:textSize="29dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Computer Graphics"
+        android:id="@+id/cg"
+        android:layout_below="@+id/daa"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:fontFamily="cursive"
+        android:onClick="cg"
+        android:textSize="30dp" />
+</RelativeLayout>
